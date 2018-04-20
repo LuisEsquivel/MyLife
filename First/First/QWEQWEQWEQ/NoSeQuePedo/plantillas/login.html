@@ -1,0 +1,286 @@
+ {% load staticfiles %}
+
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<head>
+    <link rel="stylesheet" href={% static 'CSS/login.css' %}>
+    <link rel="shortcut icon" href="http://s2.subirimagenes.com/imagen/previo/thump_9823042cats.png">
+    <title>MyLife</title>
+</head>
+
+<!--- Estilo de la imagen !-->
+<style>
+.imagen
+   {
+    margin-bottom: 100px;
+    margin-left: 75px;
+   }
+</style>
+<!-- Estilo de los textbox !-->
+<style>
+  .textbox
+  {
+  border: 1px solid #DBE1EB;
+  font-size: 18px;
+  font-family: Arial, Verdana;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  background: #FFFFFF;
+  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+  color: #2E3133;
+  }
+
+  .textbox:focus
+  {
+  color: #2E3133;
+  border-color: #FBFFAD;
+  }
+  </style>
+<!-- Salto de linea !-->
+<style type="text/css" media="all">
+    .blanco {
+    font-size:11px;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+</style>
+<!-- Estilo del texto MyLife te ayuda a comunica...!-->
+<style>
+    .texto
+   {
+    margin-left: 175px;
+    font-size: 20px;
+    font-family: "Century Gothic";
+    color: #0e385f;;
+    line-height: 29px;
+    word-spacing: -1px;
+    font-weight: bold;
+   }
+</style>
+<!--Estilo del formulario Registrar!-->
+<style>
+    .registrarse
+   {
+    display: inline-block;
+    position: absolute;
+    left:650px;
+    margin-top: -115px;
+    font-family: sans-serif;
+   }
+</style>
+<!--Es la caja azul de arriba !-->
+<style>
+body{
+    margin: 0 auto;
+}
+    nav
+{
+    width: 100%;
+    background: #000000 repeat-x  100%;
+    height: 11%;
+    padding: 0;
+    margin: 0 auto;
+    border: 0;
+}
+</style>
+<!-- Texto MyLife !-->
+<style>
+    nav header strong
+ 	{
+    position: relative;
+    margin-left:175px;
+    top: 35px;
+   	font-family: "verdana";
+   	font-size: 35px;
+    color: white;
+   }
+</style>
+<!-- Estilo del boton Crear Cuenta !-->
+<style type="text/css">
+.boton_personalizado {
+	-moz-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+	box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9dce2c), color-stop(1, #8cb82b) );
+	background:-moz-linear-gradient( center top, #9dce2c 5%, #8cb82b 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dce2c', endColorstr='#8cb82b');
+	background-color:#9dce2c;
+	-webkit-border-top-left-radius:7px;
+	-moz-border-radius-topleft:7px;
+	border-top-left-radius:7px;
+	-webkit-border-top-right-radius:7px;
+	-moz-border-radius-topright:7px;
+	border-top-right-radius:7px;
+	-webkit-border-bottom-right-radius:7px;
+	-moz-border-radius-bottomright:7px;
+	border-bottom-right-radius:7px;
+	-webkit-border-bottom-left-radius:7px;
+	-moz-border-radius-bottomleft:7px;
+	border-bottom-left-radius:7px;
+	text-indent:0px;
+	border:1px solid #393d33;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Comic Sans MS;
+	font-size:21px;
+	font-weight:bold;
+	font-style:normal;
+	height:41px;
+	line-height:41px;
+	width:200px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #689324;
+}
+.boton_personalizado:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8cb82b), color-stop(1, #9dce2c) );
+	background:-moz-linear-gradient( center top, #8cb82b 5%, #9dce2c 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');
+	background-color:#8cb82b;
+}.boton_personalizado:active {
+	position:relative;
+	top:1px;
+}</style>
+<!--Este es el texto que sale debajo del boton Abrir cuenta !-->
+<style>
+    .textaso{
+    color: #777;
+    font-size: 11px;
+    width: 316px;
+    margin-bottom:20px;
+    margin-top: 20px;
+    }
+</style>
+<!-- Estilo del boton de Iniciar Sesion !-->
+<style type="text/css">
+.botonIniciarSesion {
+    margin-top: -100px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 13px;
+    background: #000000;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+}
+
+.botonIniciarSesion:hover {
+  background: #d40000;
+  background-image: -webkit-linear-gradient(top, #d40000, #000000);
+  background-image: -moz-linear-gradient(top, #d40000, #000000);
+  background-image: -ms-linear-gradient(top, #d40000, #000000);
+  background-image: -o-linear-gradient(top, #d40000, #000000);
+  background-image: linear-gradient(to bottom, #d40000, #000000);
+  text-decoration: none;
+}
+</style>
+
+
+<body bgcolor="   #f2f3f4">
+
+<!-- esta es la caja azul dentro de ella se encuentra el formulario
+     para iniciar sesion -->
+<nav class="nav" >
+<header> <strong>MyLife</strong> </header>
+<form action="/login/" method="get">
+<!-- dentro de está clase está
+     un label y un textbox para
+     el correo-->
+	<div class="correo">
+	<label>Correo electronico</label>
+	<br>
+	<input type="text" name="email" id="email">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>
+             /*Funcion de Capturar, Almacenar datos*/
+            $(document).ready(function(){
+                $('#Btn-Login').click(function(){
+                    /*Captura de datos escrito en los inputs*/
+                    var email = document.getElementById("email").value;
+                    /*Guardando los datos en el LocalStorage*/
+                    localStorage.setItem("email", email);
+                });
+            });
+        </script>
+    </div>
+
+    <!-- dentro de está clase está
+         un label y un textbox para
+         la contraseña-->
+
+	<div class="password">
+	<br>
+	<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contraseña</label>
+	<br>
+
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+	<input type="password" name="pswd" id="pswd">
+    </div>
+
+    <!-- boton  -->
+    <div class="enviar">
+    <label>&nbsp;</label>
+        <label>&nbsp;</label>
+        <label>&nbsp;</label>
+        <label>&nbsp;</label>
+        <input type="submit" class="botonIniciarSesion " value="Iniciar sesión" id="Btn-Login">
+    </div>
+
+</form>
+</nav>
+
+<!-- Este es el texto-->
+<br><br>
+<div class="texto">
+    MyLife te ayuda a comunicarte y compartir  con <br> las personas que forman parte de tu vida.
+</div>
+
+<!-- Está es la imagen-->
+<div class="imagen">
+    <img src="https://www.facebook.com/rsrc.php/v3/yc/r/GwFs3_KxNjS.png" class="imagen">
+
+</div>
+
+
+<div class="registrarse">
+    <form action="/nuevo/" method="get">
+    <!--<strong><span>Abre una cuenta</span>  </strong> !-->
+        <!-- <font size="6"> <strong>Abre una cuenta</strong> </font> !-->
+    <h2>Abre una cuenta
+        <br>
+        <font size="4">Es gratis y lo será siempre.</font></h2>
+
+    <input type="text" class="textbox" name="nombre" placeholder="Nombre">
+    <input type="text" class="textbox" name="apellido" placeholder="Apellido">
+    <p class="blanco"></p>
+    <input type="text" class="textbox"  style="width:100%" name="email" placeholder="Correo electrónico">
+    <p class="blanco"></p>
+    <input type="text" class="textbox"  style="width:100%" name="pswd" placeholder="Contraseña">
+    <p class="blanco"></p>
+    <p class="textaso">
+        Al hacer clic en "Abrir una cuenta", aceptas las Condiciones y confirmas que leíste nuestra Política de datos,
+        incluido el uso de cookies. Es posible que recibas notificaciones por SMS de MyLife,
+        que puedes desactivar en cualquier momento.
+    </p>
+    <input type="submit"class="boton_personalizado" value ="Abrir una cuenta">
+   </form>
+</div>
+
+<div class="partedeabajo">
+    <br>  <br>
+  	<h6>MyLife © 2017</h6>
+</div>
+
+</form>
+</body>
+</html>

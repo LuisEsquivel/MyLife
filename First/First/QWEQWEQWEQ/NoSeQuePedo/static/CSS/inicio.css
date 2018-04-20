@@ -1,0 +1,90 @@
+
+
+/** Este es la caja azul que aparece hasta arriba**/
+nav{
+        position: relative;;
+ 		width: 1340px;
+ 		background:    #23508e ;   
+ 		height: 60px; 
+ 		padding-top: 0px;
+ 		padding-left: 0px;	
+ 	}
+ 
+
+
+/** Este es el header que dice mylife que está dentro de la caja azul**/
+ 	nav header strong
+ 	{
+    position: relative;
+    margin-left: 150px;
+    top: 8px;
+   	font-family: "verdana";
+   	font-size: 35px;
+    color: white ;
+   }
+
+
+
+
+
+/** Este es el textbox y el label de buscar en la caja azul**/
+  .Buscar
+   {
+    position: relative;
+    margin-left: 350px;
+   	font-family: "verdana";
+   	font-size: 15px;
+   	color: white;
+   	bottom: 20px;
+   }
+
+
+
+/** Estas son las opciones de inicio, perfil, buscar_amigazos y solicitudes**/
+  .opciones 
+   {
+    position: relative;
+    margin-left: 650px;
+   	font-family: "verdana";
+   	font-size: 15px;
+   	bottom: 40px;
+   	
+ }
+
+
+/** Estas son las opciones unicamente que se le aplica el estilo a cada una**/
+ .opciones a
+ {
+ 	text-decoration: none;
+ 	color:white;
+    padding: 10px;
+ }
+
+
+
+ .opciones a:hover
+ {
+   background-color:  white ;
+   border-radius: 30px;
+   cursor:  pointer;
+ }
+
+ /** Este es el texto que dice MyLife te comunica....**/
+   .texto
+   {
+   	position: relative;
+    top: 100px;
+    margin-left: 150px;
+    font-size: 20px;
+    font-family: verdana;
+    color: #798eab ;
+
+   }
+
+/** Este es la imagen**/
+   .imagen
+   {
+    position: relative;
+    top: 100px;
+   
+   }

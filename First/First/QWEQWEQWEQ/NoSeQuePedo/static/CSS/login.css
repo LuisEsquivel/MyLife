@@ -1,0 +1,134 @@
+
+/** Este es la caja azul que aparece hasta arriba**/
+nav{
+ 		width: 1340px;
+ 		background:    #23508e ;
+ 		height: 90px;
+    padding: 0px;
+ 	}
+
+
+
+/** Este es el header que dice mylife que está dentro de la caja azul**/
+ 	nav header strong
+ 	{
+    position: relative;
+    margin-left: 150px;
+    top: 35px;
+   	font-family: "verdana";
+   	font-size: 35px;
+    color: white;
+   }
+
+
+
+
+
+/** Este son la caja de texto y la Label del correo**/
+   .correo
+   {
+
+    position: relative;
+   	bottom: 20px;
+    margin-left: 750px;
+   	font-family: "verdana";
+   	font-size: 15px;
+    color: white;
+
+   }
+
+
+/** Este son la caja de texto y la Label de La contraseña**/
+   .password
+   {
+    position: relative;
+   	bottom:  77px;
+    margin-left: 920px;
+   	font-family: "verdana";
+   	font-size: 15px;
+    color: white;
+   }
+
+
+/** Este es el boton que dice enviar**/
+   .enviar
+   {
+    position: relative;
+   	bottom: 98px;
+    margin-left: 1100px;
+   	font-family: "verdana";
+   	font-size: 15px;
+    color: white;
+   }
+
+
+
+
+
+ /** Este es el texto que dice MyLife te comunica....**/
+   .texto
+   {
+   	position: static;
+    top: 75px;
+    margin-left: 150px;
+    font-size: 20px;
+    font-family: verdana;
+    color: #000000;
+   }
+
+
+   .imagen
+   {
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    margin-left: 150px;
+   }
+
+
+      .registrarse
+   {
+    position: relative;
+    display: inline-block;
+    margin-left: 150px;
+    font-family: sans-serif;
+   }
+
+      .inputtext{
+          border: 1px solid #bdc7d8;
+    margin: 0;
+    padding: 3px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+      }
+
+
+   .registrarse form
+   {
+    font-size: 30px;
+    border-color: gray;
+    border-radius: inherit;
+   }
+
+/**
+   .registrarse h1
+   {
+   font-size: 40px;
+    font-family: sans-serif;
+   }
+**/
+.registrarse  h3
+   {
+    font-size: 20px;
+    font-family: sans-serif;
+   }
+
+
+   .partedeabajo
+   {
+    position: relative;
+    font-family: sans-serif;
+    text-align: center;
+    top: 102px;
+
+   }
